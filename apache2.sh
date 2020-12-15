@@ -16,3 +16,6 @@ sudo vim   /var/www/dypetisiap.com/index.html
 sudo vim  /etc/apache2/sites-available/dypetisiap.conf
 
 sudo vim  /etc/apache2/sites-available/dypetisiap.com.conf
+
+cp ConfCopiar.txt /etc/apache2/sites-available/dypetisiap.com.conf
+
