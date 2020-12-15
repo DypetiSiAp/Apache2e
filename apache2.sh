@@ -19,3 +19,5 @@ sudo vim  /etc/apache2/sites-available/dypetisiap.com.conf
 
 cp ConfCopiar.txt /etc/apache2/sites-available/dypetisiap.com.conf
 
+openssl genrsa -out dypetisiap.com.key 1024
+
