@@ -21,3 +21,13 @@ cp ConfCopiar.txt /etc/apache2/sites-available/dypetisiap.com.conf
 
 openssl genrsa -out dypetisiap.com.key 1024
 
+
+openssl req -new -key dypetisiap.com.key -out dypetisiap.schema.crt
+
+
+openssl x509 -req -days 365 -in dypetisiap.schema.crt -signkey dypetisiap.com.key  -out  dypetisiap.schema.crt 
+
+cd /etc/apache2/sites-avariable/
+
+vim dypetisiap-ssl.com.conf
+
